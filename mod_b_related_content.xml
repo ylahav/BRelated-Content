@@ -22,6 +22,7 @@
 		<filename module="mod_b_related_content">mod_b_related_content</filename>
 		<filename>index.html</filename>
 		<filename>helper.php</filename>
+		<filename>README.md</filename>
 		<filename>tmpl/default.php</filename>
 		<filename>tmpl/article.php</filename>
 		<filename>tmpl/index.html</filename>
