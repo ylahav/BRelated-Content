@@ -1,0 +1,67 @@
+/* */
+
+#b-relations li {
+	list-style: none;
+}
+
+.b-relation {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	clear: both;
+	margin: 3px 0px !important;
+	height: 260px;
+	width: 650px;
+}
+.b-relation-header {
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    width: 8%;
+}
+.b-relation-number {
+	background: none repeat scroll 0% 0% #EEE;
+	border-bottom: 1px solid #CCC;
+	color: #CBCBCB;
+	font-size: 20px;
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+	text-shadow: 1px 1px #FFF;
+}
+.b-relation-container {
+	border-left: 1px solid #CCC;
+	float: left;
+	height: 260px;
+	padding-left: 2%;
+	position: relative;
+	width: 88%;
+}
+.b-relation-delete {
+    background: url('delete.png') no-repeat scroll center center transparent;
+    border: medium none;
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    display: block;
+    width: 16px !important;
+    height: 16px;
+}
+.b-sources, .b-destinations {
+	display: inline-block;
+	width: 100%;
+}
+.b-relation  h3, .b-sources-articles , .b-sources-categories{
+	width: 100%;
+}
+ .b-sources-articles , .b-sources-categories{
+	margin-top: 5px;
+}
+.b-sources-label, .b-destinations-label {
+	float: left;
+	margin-top: 5px;
+	width: 170px;
+}
+.b-sources-input , .b-destinations-input {
+	float: left;
+	margin-top: 5px;
+	width: 400px;
+}
