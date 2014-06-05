@@ -1,0 +1,10 @@
+
+.random-article-wrapper .column {
+	width: 100%;
+	margin-right: 0px;
+	float: left;
+}
+		
+.random-article-wrapper .column:last-child { margin-right: auto; }
+	
+.random-article-wrapper .clearfix { clear: both; }
