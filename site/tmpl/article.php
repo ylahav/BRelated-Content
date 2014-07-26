@@ -51,9 +51,9 @@
 						echo $article->introtext;
 					else {
 														
-						// Find the position of the $limitCount word, so it can be used in modSlideshowckHelper::substr_HTML()
-						$newLimit = modSlideshowckHelper::strposnth(strip_tags($article->introtext), " ", $limitCount);
-						$introtext = modSlideshowckHelper::substr_HTML($newLimit, $article->introtext);
+						// Find the position of the $limitCount word, so it can be used in modBRelatedContentHelper::substr_HTML()
+						$newLimit = modBRelatedContentHelper::strposnth(strip_tags($article->introtext), " ", $limitCount);
+						$introtext = modBRelatedContentHelper::substr_HTML($newLimit, $article->introtext);
 						echo $introtext . "...";
 					}
 				}
@@ -73,7 +73,7 @@
 						//$introtext = substr($article->introtext, 0, $limitCount);
 						
 						// New function to ignore HTML tags when limiting the introtext.						
-						$introtext = modSlideshowckHelper::substr_HTML($limitCount, $article->introtext);
+						$introtext = modBRelatedContentHelper::substr_HTML($limitCount, $article->introtext);
 						
 						echo $introtext . "...";
 					}
@@ -105,7 +105,7 @@
 	
 	<?php 
 	if($params->get('introtextimage') && $article->type == "K2") :
-		$imgsrc = modSlideshowckHelper::getK2ArticleImage($article, $params->get('k2imagesize')); 	?>				
+		$imgsrc = modBRelatedContentHelper::getK2ArticleImage($article, $params->get('k2imagesize')); 	?>				
 		<div class="introimage">
 			<a href="<?php echo $urls[$articleIndex]; ?>">
 				<img src="<?php echo $imgsrc; ?>" alt="<?php echo $article->title; ?>"/>
