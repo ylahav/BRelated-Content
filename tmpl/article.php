@@ -1,3 +1,15 @@
+<?php
+/**
+ * @package Module B Related Content
+ * @version $Id:
+ * @author Yair Lahav
+ * @copyright (C) 2014 - Yair Lahav
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+ 
+// no direct access
+defined('_JEXEC') or die('Restricted access');
+?>
 <?php if($html5) : ?>
 	<article class="b-related-content <?php if($article->type == "K2") echo "b-related-k2-content "; ?> ">
 <?php else: ?>
