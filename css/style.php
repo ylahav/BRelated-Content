@@ -1,4 +1,14 @@
 <?php
+/**
+ * @package Module B Related Content
+ * @version $Id:
+ * @author Yair Lahav
+ * @copyright (C) 2014 - Yair Lahav
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+**/
+ 
+// no direct access
+defined('_JEXEC') or die('Restricted access');
 	ob_start();
 	header('Content-type: text/css'); 
 ?>
